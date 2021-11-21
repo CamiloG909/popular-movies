@@ -1,0 +1,16 @@
+.message
+	position: fixed
+	inset-block-start: 15px
+	inset-inline-end: 15px
+	padding: 10px 20px
+	@include font(bold,1.5rem, normal, black)
+	border-radius: 20px
+	background-color: $soft-white
+	box-shadow: $shadow
+	user-select: none
+	transition: all .1s ease-in-out
+	transform: translateY(-55px)
+	i
+		color: #fd0000
+		&.--success
+			color: $soft-green
