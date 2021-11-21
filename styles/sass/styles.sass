@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+$white: #f5f5f5
+$green: #1CCC5B
+$dark-green: #117a37
+
+::selection
+	color: white
+	background-color: $green
+
+// Scroll
+::-webkit-scrollbar
+	-webkit-appearance: none
+
+::-webkit-scrollbar:vertical
+	inline-size: 7px
+
+::-webkit-scrollbar-button:increment,::-webkit-scrollbar-button
+	display: none
+
+::-webkit-scrollbar:horizontal
+	block-size: 10px
+
+::-webkit-scrollbar-thumb
+	background-color: #ffffff44
+	border-radius: 20px
+
+::-webkit-scrollbar-thumb:hover
+	background-color: #ffffff7b
+
+::-webkit-scrollbar-track
+	margin: 0 3px
+	border-radius: 10px
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	font-family: 'Montserrat', sans-serif
+	background: $white
+	color: black
+
+.container
+	width: 90%
+	max-width: 1000px
+	margin: 40px auto 100px auto
+	display: grid
+	grid-template-columns: repeat(4, 1fr)
+	gap: 40px
+	.movie
+		text-align: center
+		.title
+			font-size: 16px
+			font-weight: 600
+		.poster
+			width: 100%
+			margin-bottom: 10px
+			border-radius: 15px
+
+.pagination
+	position: fixed
+	bottom: 0
+	background: black
+	width: 100%
+	display: flex
+	justify-content: center
+	gap: 20px
+	padding: 10px
+	button
+		cursor: pointer
+		border: none
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+		height: 50px
+		width: 200px
+		background: #174424
+		color: #fff
+		border-radius: 100px
+		font-family: 'Montserrat', sans-serif
+		font-weight: 600
+		transition: .3s ease all
+		&:hover
+			background: $dark-green
